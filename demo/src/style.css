@@ -83,7 +83,6 @@
   
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url(""), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
