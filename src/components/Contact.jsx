@@ -5,9 +5,9 @@ import '../../style.css';
 
 const Contact = () => {
     const [input, setInput] = useState({
-        name: '',
-        email: '',
-        message: ''
+        name: 'name',
+        email: 'email',
+        message: 'message'
     });
 
     const handleChange = (e) => {
