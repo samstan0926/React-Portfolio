@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../../style.css';
-import Header from './header.jsx';
+import Header from './Header.jsx';
 class AboutMe extends React.Component {
 
     render() {
