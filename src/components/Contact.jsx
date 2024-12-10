@@ -12,6 +12,11 @@ const Contact = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+        const [input, setInput] = useState({
+            name: '',
+            email: '',
+            message: ''
+        });
         setInput(prevInput => ({
             prevInput,
             [name]: value
@@ -24,6 +29,11 @@ const Contact = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+        const [input, setInput] = useState({
+            name: '',
+            email: '',
+            message: ''
+        });
         if (!input.name || !input.email || !input.message) {
             alert('All fields are required!');
             return;
