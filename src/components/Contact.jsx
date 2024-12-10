@@ -5,15 +5,15 @@ import '../../style.css';
 
 const Contact = () => {
     const [input, setInput] = useState({
-        name: 'name',
-        email: 'email',
-        message: 'message'
+        name: '',
+        email: '',
+        message: ''
     });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setInput(prevInput => ({
-            ...prevInput,
+            prevInput,
             [name]: value
         }));
     };
