@@ -1,4 +1,4 @@
-import Header from "./Header.jsx";
+
 
 import React from 'react';
 
@@ -8,7 +8,7 @@ class Project extends React.Component {
     render() {
         return (
             <div>
-                < Header />
+
                 <h2 className="header-h1">Projects</h2>
                 <div className="page-section">
                     <h2 id="My Projects">Work</h2>

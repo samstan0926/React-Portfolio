@@ -1,11 +1,11 @@
 
-import Header from './Header.jsx';
+
 import '../../style.css';
 
 const Resume = () => {
     return (
         <div>
-            <Header />
+
             <section>
 
             <h2 className='header-h1'>Resume</h2>

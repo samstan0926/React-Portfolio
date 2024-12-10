@@ -1,20 +1,19 @@
 import React from 'react';
 import { useState } from 'react';
-import Header from './Header.jsx';
+
 import '../../style.css';
 
 const Contact = () => {
-
+    let [input, setInput] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        const [input, setInput] = useState({
-            name: '',
-            email: '',
-            message: ''
-        });
         setInput(prevInput => ({
-            prevInput,
+            ...prevInput,
             [name]: value
         }));
     };
@@ -25,24 +24,19 @@ const Contact = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const [input, setInput] = useState({
-            name: '',
-            email: '',
-            message: ''
-        });
+        
         if (!input.name || !input.email || !input.message) {
             alert('All fields are required!');
-            return;
         }
         if (!isValidEmail(input.email)) {
             alert('Please enter a valid email address!');
             return;
-        }  
+            }  
             return;
         }
     return (
         <section>
-            <Header />
+
             <h2 className='header-h1'>Contact</h2>
             <form onSubmit={handleSubmit}>
                 <label>
