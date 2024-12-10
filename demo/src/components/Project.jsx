@@ -11,7 +11,7 @@ class Project extends React.Component {
 
                 <h2 className="header-h1">Projects</h2>
                 <div className="page-section">
-                    <h2 id="My Projects">Work</h2>
+                    <h2 id="My Projects">Work    </h2>
                     <section className="flex-container">
                         <div className="flex-item surf-report">
                             <h3>Surf Report<a href=""></a></h3> 
