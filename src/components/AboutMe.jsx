@@ -1,9 +1,7 @@
-import { Link, useParams } from 'react-router-dom';
-
 
 import React from 'react';
 import '../../style.css';
-import Header from './header';
+import Header from './header.jsx';
 class AboutMe extends React.Component {
 
     render() {
