@@ -4,11 +4,7 @@ import Header from './Header.jsx';
 import '../../style.css';
 
 const Contact = () => {
-    const [input, setInput] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
