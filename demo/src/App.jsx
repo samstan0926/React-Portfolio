@@ -1,14 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../../src/components/Footer.jsx';
-import Header from '../../src/components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Header from './components/header.jsx';
 
 function App() {
     return (
         <>
-            < Header />
+            <Header />
             <Outlet />
-            < Footer />
+            <Footer />
         </>
     );
 }
