@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+
 import Header from './Header.jsx';
 import '../../style.css';
-import Footer from './Footer';
+
 const Resume = () => {
     return (
         <div>
