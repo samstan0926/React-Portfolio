@@ -9,8 +9,6 @@ const Contact = () => {
         message: ''
     });
 
-
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setInput(prevInput => ({
@@ -32,9 +30,9 @@ const Contact = () => {
         if (!isValidEmail(input.email)) {
             alert('Please enter a valid email address!');
             return;
-        }  e
-        alert(`Thank you for your message, ${input.name}!`);
-    };
+        }  
+            return;
+        }
     return (
         <section>
             <Header />
